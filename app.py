@@ -50,4 +50,4 @@ elif menu == "Photo Doubt Solver":
     if img:
         st.image(img, caption="Uploaded Image")
         st.info("AI solver feature coming soon")
-Fixed app.py and moved code from README
+Removed invalid line causing syntax error 
