@@ -1,37 +1,37 @@
-import streamlit as st
+important streamlit as st
+# All NEET Biology chapters
+chapters = [
+    "The Living World",
+    "Biological Classification",
+    "Plant Kingdom",
+    "Animal Kingdom",
+    "Morphology of Flowering Plants",
+    "Anatomy of Flowering Plants",
+    "Cell: The Unit of Life",
+    "Biomolecules",
+    "Cell Cycle and Cell Division"
+]
 def generate_notes(chapter):
-    notes = {
-        "The Living World": """
-### The Living World – NEET Biology Notes
+    return f"""
+## {chapter} – NEET Biology Notes
 
-**Definition**
-Living organisms show metabolism, growth, reproduction and response to stimuli.
+### Introduction
+This chapter is important for NEET Biology and is strictly based on NCERT.
 
-**Characteristics**
-- Cellular organization
-- Metabolism
-- Growth
-- Reproduction
-- Consciousness
-""",
+### Key Concepts
+- Definitions and explanations
+- Important terminology
+- NCERT-based facts
 
-        "Plant Kingdom": """
-### Plant Kingdom – NEET Biology Notes
+### NEET Focus
+- Direct NCERT lines
+- Frequently asked concepts
+- Diagram-based questions
 
-**Overview**
-Plant Kingdom includes all photosynthetic eukaryotes.
+### Exam Tip
+Revise NCERT multiple times and practice MCQs.
+"chapter = st.selectbox("Select Chapter", chapters)""
 
-**Major Groups**
-- Algae
-- Bryophytes
-- Pteridophytes
-- Gymnosperms
-- Angiosperms
-
-**Key NEET Points**
-- Alternation of generation
-- Vascular tissues
-"""
     }
 
     return notes.get(chapter, "Notes not available")
