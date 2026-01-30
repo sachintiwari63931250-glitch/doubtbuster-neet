@@ -91,11 +91,10 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 - Metabolism (most important)
 - Cellular organisation
 - Consciousness""")
-
-**NCERT Key Points**
-- Metabolism is defining property
-- Viruses are borderline between living & non-living
-- Binomial nomenclature by Carolus Linnaeus
+st.markdown("**NCERT Key Points**")
+st.markdown("- Metabolism is defining property")
+st.markdown("- Viruses are borderline between living & non-living")
+st.markdown("- Binomial nomenclature by Carolus Linnaeus")
 
 **NEET Focus**
 - Direct definition based MCQs
