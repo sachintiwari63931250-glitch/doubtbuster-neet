@@ -78,7 +78,19 @@ elif menu == "Notes" :
     st.header("Biology Notes Generator")
 chapter = st.selectbox("Select Chapter", chapters)
 if st.button("Generate Notes"):
-    st.subheader(f"Notes: {chapter}")
+
+    if chapter == "The Living World":
+        st.subheader("The Living World – NEET Biology Notes")
+        st.write("Living organisms show metabolism, growth, reproduction...")
+
+    elif chapter == "Plant Kingdom":
+        st.subheader("Plant Kingdom – NEET Biology Notes")
+        st.write("Plant Kingdom includes algae, bryophytes, pteridophytes...")
+        st.write("Classification based on body organization and reproduction.")
+
+    elif chapter == "Biological Classification":
+        st.subheader("Biological Classification – NEET Biology Notes")
+        st.write("Five kingdom classification by R.H. Whittaker...")
 st.markdown("""    
 ### 📘 The Living World – NEET Biology Notes
 
