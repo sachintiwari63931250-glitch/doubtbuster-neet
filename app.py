@@ -79,7 +79,7 @@ elif menu == "Notes" :
 chapter = st.selectbox("Select Chapter", chapters)
 if st.button("Generate Notes"):
     st.subheader(f"Notes: {chapter}")
-    st.markdown("""
+st.markdown("""    
 ### 📘 The Living World – NEET Biology Notes
 
 **Definition**
@@ -101,7 +101,6 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 - Direct definition based MCQs
 - Virus & taxonomy questions
 """)
-        st.info("Notes for this chapter will be added soon.")
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
     q = "Which organelle is the powerhouse of the cell?"
