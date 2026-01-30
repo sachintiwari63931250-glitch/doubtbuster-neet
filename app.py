@@ -58,9 +58,6 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 
     else:
         st.info("Notes for this chapter will be added soon.")
-    
-        else:
-            st.warning("Please enter a chapter name")
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
     q = "Which organelle is the powerhouse of the cell?"
