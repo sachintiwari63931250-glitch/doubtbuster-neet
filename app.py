@@ -11,7 +11,7 @@ st.subheader("NEET Biology AI Helper")
 menu = st.sidebar.selectbox(
     "Select Feature",
     [
-        "Home",Notes
+        "Home",Notes,
         "MCQ Practice",
         "PDF Upload",
         "Photo Doubt Solver"
