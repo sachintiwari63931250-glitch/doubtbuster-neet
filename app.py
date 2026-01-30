@@ -99,11 +99,18 @@ st.markdown("- Binomial nomenclature by Carolus Linnaeus")
 st.markdown("**NEET Focus**")
 st.markdown("- Direct definition based MCQs")
 st.markdown("- Virus & taxonomy questions")
+if menu == "Notes":
+    st.header("Notes Section")
+    st.markdown("**NCERT Key Points**")
+    st.markdown("- Line 1")
+    st.markdown("- Line 2")
 
 elif menu == "MCQ Practice":
-    st.header("Sample MCQ")
-    q = "Which organelle is the powerhouse of the cell?"
-    st.write(q)
+    st.header("MCQ Practice")
+    st.write("MCQs will appear here")
+
+elif menu == "Doubt Solver":
+    st.header("Ask Your Doubt")
 
     ans = st.radio(
         "Choose answer:",
