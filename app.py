@@ -11,7 +11,7 @@ st.subheader("NEET Biology AI Helper")
 menu = st.sidebar.selectbox(
     "Select Feature",
     [
-        "Home",
+        "Home",Notes
         "MCQ Practice",
         "PDF Upload",
         "Photo Doubt Solver"
@@ -21,7 +21,22 @@ menu = st.sidebar.selectbox(
 if menu == "Home":
     st.success("App is running successfully 🚀")
     st.write("Prepare NEET Biology with AI-powered tools.")
+elif menu == "Notes":
+    st.header("Biology Notes Generator")
 
+    chapter = st.text_input("Enter Chapter Name (e.g. Cell Cycle)")
+
+    if st.button("Generate Notes"):
+        if chapter:
+            st.subheader(f"Notes: {chapter}")
+            st.write("""
+            • Important definitions  
+            • Key biological processes  
+            • NCERT-focused points  
+            • Exam-oriented highlights  
+            """)
+        else:
+            st.warning("Please enter a chapter name")
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
     q = "Which organelle is the powerhouse of the cell?"
