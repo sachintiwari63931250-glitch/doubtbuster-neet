@@ -79,7 +79,7 @@ elif menu == "Notes" :
 chapter = st.selectbox("Select Chapter", chapters)
 if st.button("Generate Notes"):
     st.subheader(f"Notes: {chapter}")
-        st.markdown("""
+    st.markdown("""
 ### 📘 The Living World – NEET Biology Notes
 
 **Definition**
@@ -90,7 +90,7 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 - Reproduction
 - Metabolism (most important)
 - Cellular organisation
-- Consciousness
+- Consciousness""")
 
 **NCERT Key Points**
 - Metabolism is defining property
