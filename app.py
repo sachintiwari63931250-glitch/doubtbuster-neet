@@ -8,7 +8,7 @@ st.set_page_config(page_title="DoubtBuster NEET", layout="centered")
 st.title("🧠 DoubtBuster NEET")
 st.caption("NEET Biology | Notes • MCQs • PDF • Photo Doubt Solver")
 
-menu = st.radio(
+menu =  st.radio(
     "Select Feature",
     ["📘 Notes", "📝 MCQs", "📄 PDF Viewer", "📷 Photo Doubt Solver"]
 )
