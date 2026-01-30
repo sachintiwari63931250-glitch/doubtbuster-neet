@@ -129,4 +129,4 @@ elif menu == "Photo Doubt Solver":
     if img:
         st.image(img, caption="Uploaded Image")
         st.info("AI solver feature coming soon")
- 
+ """)
