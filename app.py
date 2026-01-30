@@ -101,8 +101,6 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 - Direct definition based MCQs
 - Virus & taxonomy questions
 """)
-
-    else:
         st.info("Notes for this chapter will be added soon.")
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
