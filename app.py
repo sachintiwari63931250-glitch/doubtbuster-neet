@@ -100,7 +100,7 @@ Living organisms show metabolism, growth, reproduction and response to stimuli.
 **NEET Focus**
 - Direct definition based MCQs
 - Virus & taxonomy questions
-""")
+
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
     q = "Which organelle is the powerhouse of the cell?"
@@ -129,4 +129,4 @@ elif menu == "Photo Doubt Solver":
     if img:
         st.image(img, caption="Uploaded Image")
         st.info("AI solver feature coming soon")
- """)
+
