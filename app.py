@@ -1,4 +1,4 @@
-important streamlit as st
+ if important streamlit as st
 # All NEET Biology chapters
 chapters = [
     "The Living World",
