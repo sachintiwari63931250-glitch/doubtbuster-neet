@@ -1,5 +1,40 @@
 import streamlit as st
+def generate_notes(chapter):
+    notes = {
+        "The Living World": """
+### The Living World – NEET Biology Notes
 
+**Definition**
+Living organisms show metabolism, growth, reproduction and response to stimuli.
+
+**Characteristics**
+- Cellular organization
+- Metabolism
+- Growth
+- Reproduction
+- Consciousness
+""",
+
+        "Plant Kingdom": """
+### Plant Kingdom – NEET Biology Notes
+
+**Overview**
+Plant Kingdom includes all photosynthetic eukaryotes.
+
+**Major Groups**
+- Algae
+- Bryophytes
+- Pteridophytes
+- Gymnosperms
+- Angiosperms
+
+**Key NEET Points**
+- Alternation of generation
+- Vascular tissues
+"""
+    }
+
+    return notes.get(chapter, "Notes not available")
 st.set_page_config(
     page_title="DoubtBuster NEET",
     layout="centered"
@@ -76,9 +111,15 @@ if menu == "Home":
     st.write("Prepare NEET Biology with AI-powered tools.")
 elif menu == "Notes" :
     st.header("Biology Notes Generator")
-chapter = st.selectbox("Select Chapter", chapters)
-if st.button("Generate Notes"):
+st.subheader("Prepare NEET Biology with AI-powered tools")
 
+chapter = st.selectbox(
+    "Select Chapter",
+    ["The Living World", "Plant Kingdom"]
+)
+
+if st.button("Generate Notes"):
+    st.markdown(generate_notes(chapter))
     if chapter == "The Living World":
         st.subheader("The Living World – NEET Biology Notes")
         st.write("Living organisms show metabolism, growth, reproduction...")
