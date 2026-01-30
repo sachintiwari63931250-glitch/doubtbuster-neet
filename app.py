@@ -1,55 +1,53 @@
-
 import streamlit as st
-from PIL import Image
-import io
 
-st.set_page_config(page_title="DoubtBuster NEET", layout="centered")
-
-st.title("🧠 DoubtBuster NEET")
-st.caption("NEET Biology | Notes • MCQs • PDF • Photo Doubt Solver")
-
-menu =  st.radio(
-    "Select Feature",
-    ["📘 Notes", "📝 MCQs", "📄 PDF Viewer", "📷 Photo Doubt Solver"]
+st.set_page_config(
+    page_title="DoubtBuster NEET",
+    layout="centered"
 )
 
-if menu == "📘 Notes":
-    st.header("Biology Notes")
-    st.write("• Cell Biology")
-    st.write("• Plant Physiology")
-    st.write("• Human Physiology")
-    st.write("• Genetics & Evolution")
-    st.write("• Ecology")
+st.title("🧠 DoubtBuster NEET")
+st.subheader("NEET Biology AI Helper")
 
-elif menu == "📝 MCQs":
-    st.header("Practice MCQs")
+menu = st.sidebar.selectbox(
+    "Select Feature",
+    [
+        "Home",
+        "MCQ Practice",
+        "PDF Upload",
+        "Photo Doubt Solver"
+    ]
+)
 
-    q = "Which organelle is known as the powerhouse of the cell?"
+if menu == "Home":
+    st.success("App is running successfully 🚀")
+    st.write("Prepare NEET Biology with AI-powered tools.")
+
+elif menu == "MCQ Practice":
+    st.header("Sample MCQ")
+    q = "Which organelle is the powerhouse of the cell?"
     st.write(q)
 
-    option = st.radio(
-        "Choose your answer",
-        ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"]
+    ans = st.radio(
+        "Choose answer:",
+        ["Nucleus", "Ribosome", "Mitochondria", "Golgi body"]
     )
 
-    if st.button("Check Answer"):
-        if option == "Mitochondria":
-            st.success("Correct ✅")
+    if st.button("Submit"):
+        if ans == "Mitochondria":
+            st.success("Correct answer ✅")
         else:
-            st.error("Wrong ❌ Correct answer is Mitochondria")
+            st.error("Wrong answer ❌")
 
-elif menu == "📄 PDF Viewer":
+elif menu == "PDF Upload":
     st.header("Upload Biology PDF")
     pdf = st.file_uploader("Upload PDF", type=["pdf"])
+    if pdf:
+        st.success("PDF uploaded successfully")
 
-    if pdf is not None:
-        st.success("PDF uploaded successfully!")
-
-elif menu == "📷 Photo Doubt Solver":
-    st.header("Upload Image of Question / Diagram")
+elif menu == "Photo Doubt Solver":
+    st.header("Upload Question Image")
     img = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
-
-    if img is not None:
-        image = Image.open(img)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
-        st.info("AI solver feature coming soon 🚀")
+    if img:
+        st.image(img, caption="Uploaded Image")
+        st.info("AI solver feature coming soon")
+Fixed app.py and moved code from README
