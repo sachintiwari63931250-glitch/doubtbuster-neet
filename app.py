@@ -96,9 +96,9 @@ st.markdown("- Metabolism is defining property")
 st.markdown("- Viruses are borderline between living & non-living")
 st.markdown("- Binomial nomenclature by Carolus Linnaeus")
 
-**NEET Focus**
-- Direct definition based MCQs
-- Virus & taxonomy questions
+st.markdown("**NEET Focus**")
+st.markdown("- Direct definition based MCQs")
+st.markdown("- Virus & taxonomy questions")
 
 elif menu == "MCQ Practice":
     st.header("Sample MCQ")
