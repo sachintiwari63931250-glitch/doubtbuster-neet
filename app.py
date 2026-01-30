@@ -74,7 +74,7 @@ menu = st.sidebar.selectbox("Menu", ["Home", "Notes"])
 if menu == "Home":
     st.success("App is running successfully ✅")
     st.write("Prepare NEET Biology with AI-powered tools.")
-elif menu == "Notes" 
+elif menu == "Notes" :
     st.header("Biology Notes Generator")
 chapter = st.selectbox("Select Chapter", chapters)
 if st.button("Generate Notes"):
