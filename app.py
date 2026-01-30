@@ -24,18 +24,41 @@ if menu == "Home":
     st.write("Prepare NEET Biology with AI-powered tools.")
 elif menu == "Notes":
     st.header("Biology Notes Generator")
+chapter = st.selectbox(
+    "Select Chapter",
+    ["The living world", "Biological classification", "Plant kingdom"]
+)
 
-    chapter = st.text_input("Enter Chapter Name (e.g. Cell Cycle)")
+if st.button("Generate Notes"):
+    st.subheader(f"Notes: {chapter}")
 
-    if st.button("Generate Notes"):
-        if chapter:
-            st.subheader(f"Notes: {chapter}")
-            st.write("""
-            • Important definitions  
-            • Key biological processes  
-            • NCERT-focused points  
-            • Exam-oriented highlights  
-            """)
+    if chapter == "The living world":
+        st.markdown("""
+### 📘 The Living World – NEET Biology Notes
+
+**Definition**
+Living organisms show metabolism, growth, reproduction and response to stimuli.
+
+**Characteristics**
+- Growth
+- Reproduction
+- Metabolism (most important)
+- Cellular organisation
+- Consciousness
+
+**NCERT Key Points**
+- Metabolism is defining property
+- Viruses are borderline between living & non-living
+- Binomial nomenclature by Carolus Linnaeus
+
+**NEET Focus**
+- Direct definition based MCQs
+- Virus & taxonomy questions
+""")
+
+    else:
+        st.info("Notes for this chapter will be added soon.")
+    
         else:
             st.warning("Please enter a chapter name")
 elif menu == "MCQ Practice":
